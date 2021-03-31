@@ -11,8 +11,11 @@ class BulletinsController < ApplicationController
     end
 
     def create 
-        binding.pry
-        bulletin = Bulletin.create(params[:bulletin])
+        bulletin = Bulletin.create(bulletin_params)
         render json: bulletin
+    end
+
+    def bulletin_params
+        params.require(:bulletin).permit(:name)
     end
 end
