@@ -8,4 +8,10 @@ class BulletinsController < ApplicationController
         bulletin = Bulletin.find_by(id: params[:id])
         render json: bulletin, include: [:boards]
     end
+
+    def create 
+        binding.pry
+        bulletin = Bulletin.create(params[:bulletin])
+        render json: bulletin
+    end
 end
