@@ -1,6 +1,6 @@
 class BulletinsController < ApplicationController
     def index 
-        bulletins = Bulletin.all
+        bulletins = Bulletin.all.sort_by(&:name)
         render json: bulletins  
     end
 

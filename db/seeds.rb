@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+bulletin = Bulletin.create(name: "Yehuda's Bulletin")
+bulletin.boards.create(name: "My Board").items.create(title:"New item", body: "This is the body")
