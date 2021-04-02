@@ -9,6 +9,17 @@ class BoardsController < ApplicationController
         render json: board
     end
 
+    def show 
+        binding.pry
+        board = Board.find_by(id: board_params[:id])
+    end
+    
+    def destroy 
+        board = Board.find_by(id: params[:id])
+        board.destroy
+        render json: board
+    end
+
     private
 
     def board_params
