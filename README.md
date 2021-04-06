@@ -1,6 +1,6 @@
 # Bulletin Board (Backend)
 
-Bulletin Board Backed is a Ruby on Rails API that interacts with [Bulletin Board Frontend](https://github.com/yehudabortz/bulletin-board-frontend), to deliver JSON upon request and persits data about different bulletin boards and their items.
+Bulletin Board Backed is a Ruby on Rails API that interacts with [Bulletin Board Frontend](https://github.com/yehudabortz/bulletin-board-frontend), to deliver JSON upon request and persist data about different bulletin boards and their items.
 
 ## Installation
 
