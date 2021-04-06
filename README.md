@@ -1,24 +1,59 @@
-# README
+# Bulletin Board (Backend)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Bulletin Board Backed is a Ruby on Rails API that interacts with [Bulletin Board Frontend](https://github.com/yehudabortz/bulletin-board-frontend), to deliver JSON upon request and persits data about different bulletin boards and their items.
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+- Clone this repository
 
-* System dependencies
+`git clone git@github.com:yehudabortz/bulletin-board-backend.git`
 
-* Configuration
+- Migrate database migrations with
 
-* Database creation
+```bash
+  rails db:migrate
+```
 
-* Database initialization
+- Starts the server with
 
-* How to run the test suite
+```bash
+  rails s
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+- See frontend [README](https://github.com/yehudabortz/bulletin-board-frontend) for installtion.
 
-* Deployment instructions
+## Usage
 
-* ...
+GET all bulletins
+
+```bash
+http://localhost:3000/bulletins
+```
+
+GET a specific bulletin
+
+```bash
+http://localhost:3000/bulletins/[:id]
+```
+
+GET all boards
+
+```bash
+http://localhost:3000/boards
+```
+
+GET a specific board
+
+```bash
+http://localhost:3000/boards/[:id]
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://github.com/yehudabortz/bulletin-board-backend/blob/main/LICENSE)
